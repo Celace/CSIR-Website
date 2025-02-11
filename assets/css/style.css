@@ -90,3 +90,7 @@ button.floating-call-btn:focus {
 p .footer-list .footer-link:hover {
   transform: scale(1.1);
 }
+
+.socials {
+  font-size: 23px;
+}
