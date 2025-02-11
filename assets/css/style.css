@@ -1,16 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* ROOT VARIABLES */
+
+:root {
+  --primary-color: #31287d;
+  --white: #ffffff;
+  --dark: #000e22;
+}
+
+.dark-bg {
+  background-color: var(--dark);
+}
+
 body,
 html {
   font-family: 'Poppins', sans-serif;
 }
 
+/* NAV AND CAROUSEL SECTION */
+
 .c-item {
-  height: calc(100vh - 60px);
+  height: 100vh;
 }
 
 .c-img {
   height: 100%;
   object-fit: cover;
   filter: brightness(0.4);
+}
+
+.navbar-brand {
+  width: 200px;
+  height: 100px;
+  margin-top: -10px;
+}
+.nav-item .nav-link:hover {
+  color: var(--primary-color);
+}
+.dir-img {
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+}
+
+.dir-message-more {
+  display: none;
+}
+
+button.floating-call-btn a {
+  color: var(--white);
+}
+
+button.floating-call-btn a:hover {
+  color: var(--primary-color);
+}
+
+button.floating-call-btn {
+  padding: 15px;
+  font-size: 0.5rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 50%;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  z-index: 10;
+  color: var(--primary-color);
+}
+
+button.floating-call-btn:hover,
+button.floating-call-btn:focus {
+  background-color: var(--white);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.read-more {
+  color: var(--primary-color);
+}
+
+/* FOOTER */
+
+.footer-link {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+p .footer-list .footer-link:hover {
+  transform: scale(1.1);
 }
