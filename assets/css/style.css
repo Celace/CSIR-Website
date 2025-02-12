@@ -13,6 +13,10 @@
   background-color: var(--dark);
 }
 
+.p-text-color {
+  color: var(--primary-color);
+}
+
 body,
 html {
   font-family: 'Poppins', sans-serif;
@@ -96,6 +100,30 @@ button.floating-call-btn:hover {
 .read-more {
   color: var(--primary-color);
   cursor: pointer;
+}
+
+/* ABOUT US */
+.underline-text {
+  position: relative;
+}
+
+.underline-text::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 42%;
+  width: 15%;
+  height: 3px; /* Adjust thickness as needed */
+  background-color: var(--primary-pink); /* Customize underline color */
+  transition: transform 0.25s ease-out;
+}
+
+.original-logo {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  top: 10%;
+  align-items: center;
 }
 
 /* FOOTER */
