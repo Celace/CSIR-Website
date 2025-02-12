@@ -6,6 +6,7 @@
   --primary-color: #31287d;
   --white: #ffffff;
   --dark: #000e22;
+  --primary-pink: #e60076;
 }
 
 .dark-bg {
@@ -48,6 +49,21 @@ html {
 .dir-message-more {
   display: none;
 }
+a.btn.learn-more-btn {
+  background-color: var(--primary-pink);
+  color: var(--white);
+  outline: none;
+}
+a.btn.learn-more-btn:hover {
+  background-color: var(--primary-pink);
+  color: var(--white);
+  outline: none;
+}
+a.btn.learn-more-btn:focus {
+  background-color: var(--primary-pink);
+  outline: none;
+  border: none;
+}
 
 button.floating-call-btn a {
   color: var(--white);
@@ -79,18 +95,27 @@ button.floating-call-btn:hover {
 
 .read-more {
   color: var(--primary-color);
+  cursor: pointer;
 }
 
 /* FOOTER */
 
 .footer-link {
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
-p .footer-list .footer-link:hover {
-  transform: scale(1.1);
+.nav-link .footer-list .footer-link:hover {
+  color: var(--primary-pink);
 }
 
 .socials {
   font-size: 23px;
+}
+
+.nav-item #navbarDropdown:hover {
+  color: var(--primary-pink);
+}
+
+ul .dropdown-menu {
+  width: 100%;
 }
