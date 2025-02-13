@@ -17,6 +17,10 @@
   color: var(--primary-color);
 }
 
+.custom-border {
+  border: 1px solid var(--white);
+}
+
 body,
 html {
   font-family: 'Poppins', sans-serif;
@@ -47,7 +51,9 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60%;
+  width: 100%;
+  height: auto;
+  padding-bottom: 3rem;
 }
 
 .dir-message-more {
@@ -57,6 +63,10 @@ a.btn.learn-more-btn {
   background-color: var(--primary-pink);
   color: var(--white);
   outline: none;
+  width: 100px;
+  padding: 7px;
+  position: relative;
+  left: 45%;
 }
 a.btn.learn-more-btn:hover {
   background-color: var(--primary-pink);
@@ -67,14 +77,6 @@ a.btn.learn-more-btn:focus {
   background-color: var(--primary-pink);
   outline: none;
   border: none;
-}
-
-button.floating-call-btn a {
-  color: var(--white);
-}
-
-button.floating-call-btn a:hover {
-  color: var(--primary-color);
 }
 
 button.floating-call-btn {
@@ -91,10 +93,11 @@ button.floating-call-btn {
   color: var(--primary-color);
 }
 
-button.floating-call-btn:hover {
-  background-color: var(--white);
-  outline: none;
+button.floating-call-btn:hover,
+button.floating-call-btn:focus {
+  background-color: var(--primary-color);
   color: var(--primary-color);
+  transform: scale(1.2);
 }
 
 .read-more {
@@ -103,6 +106,15 @@ button.floating-call-btn:hover {
 }
 
 /* ABOUT US */
+
+.main-section {
+  padding-top: 10%;
+}
+
+.goals-section {
+  background-color: rgb(247, 247, 247);
+}
+
 .underline-text {
   position: relative;
 }
@@ -117,13 +129,112 @@ button.floating-call-btn:hover {
   background-color: var(--primary-pink); /* Customize underline color */
   transition: transform 0.25s ease-out;
 }
-
-.original-logo {
-  position: relative;
-  width: 100%;
+.logo-c {
   overflow: hidden;
-  top: 10%;
+}
+.original-logo {
+  position: absolute;
+  width: 40%;
+  right: 3%;
+  overflow: hidden;
+  top: 38%;
+  object-fit: cover;
+  object-position: 55%;
+  z-index: -10;
+  overflow: hidden;
+}
+
+.feature-item {
+  display: flex;
+  gap: 10px;
+}
+
+.feature-icon {
+  color: var(--primary-color);
+}
+
+/* DIVISIONS */
+.nav-tabs .nav-link {
+  color: #495057;
+  font-weight: bold;
+}
+.nav-tabs .nav-link.active {
+  background-color: #0d6efd;
+  color: white;
+}
+.tab-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul.divisions-dropdown {
+  width: 100%;
+  text-wrap: wrap;
+}
+
+.hero-section {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 0.7511379551820728) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-size: cover;
+  object-fit: cover;
+  height: 350px;
+  color: var(--white);
+  position: relative;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hero-section .hero-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 20%;
+  height: auto;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: white !important;
+}
+
+/* PROJECTS */
+
+.parallax-inner h1 {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.parallax-1 {
+  background: url('/assets/images/image-7.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.parallax-2 {
+  background: url('/assets/images/image-6.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.parallax-3 {
+  background: url('/assets/images/image-4.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.parallax-inner {
+  padding: 20% 0;
 }
 
 /* FOOTER */
@@ -146,4 +257,20 @@ button.floating-call-btn:hover {
 
 ul .dropdown-menu {
   width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .main-section {
+    padding-top: 25%;
+  }
+  .parallax-1,
+  .parallax-2,
+  .parallax-3 {
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
 }

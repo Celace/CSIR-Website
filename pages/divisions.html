@@ -39,9 +39,7 @@
     ></script>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-sm navbar-light bg-white shadow-sm fixed-top"
-    >
+    <nav class="navbar navbar-expand-sm navbar-light bg-white shadow-sm">
       <div class="container">
         <a href="/index.html" class="navbar-brand"
           ><img src="/assets/images/logo.png" class="navbar-brand" alt=""
@@ -66,7 +64,61 @@
               <a class="nav-link" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="/pages/projects.html">Projects</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="divisionDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Divisions</a
+              >
+              <ul
+                class="divisions-dropdown dropdown-menu"
+                aria-labelledby="divisionDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="#semd" data-bs-toggle="tab"
+                    >Sanitation & Environmental Management</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#setd" data-bs-toggle="tab"
+                    >Sustainable Energy</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#mmd" data-bs-toggle="tab"
+                    >Materials & Manufacturing</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#edpd" data-bs-toggle="tab"
+                    >Engineering Design & Prototyping</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#metrology"
+                    data-bs-toggle="tab"
+                    >Metrology</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#bsid" data-bs-toggle="tab"
+                    >Business & Information Services</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#eetd" data-bs-toggle="tab"
+                    >Emerging Engineering Technologies</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Publications</a>
@@ -76,224 +128,129 @@
       </div>
     </nav>
 
-    <main>
+    <section class="hero-section p-3">
       <div class="container">
-        <div class="row main-section">
-          <h2
-            class="p-3 display-3 text-capitalize text-center fw-bolder p-text-color underline-text"
+        <div class="row">
+          <h5 class="text-center mt-4 p-3 display-2 fw-bold">Divisions</h5>
+          <p class="fs-6 text-center display-3">
+            The Institute operates with Seven (7) core research divisions namely
+            Sanitation and Environmental Management Division, Sustainable Energy
+            Technologies, Materials and Manufacturing, Engineering Design &
+            Prototyping and Metrology supported by supported by Administration,
+            Accounts, Business and Information Services (BIS) and Emerging
+            Engineering Technologies Division
+          </p>
+        </div>
+        <div class="row p-3 text-white text-center">
+          <nav
+            style="--bs-breadcrumb-divider: '>'; color: white"
+            aria-label="breadcrumb"
           >
-            About Us
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="/index.html" class="text-white">Home</a>
+              </li>
+              <li class="breadcrumb-item text-white" aria-current="page">
+                Divisions
+              </li>
+              <li class="breadcrumb-item active text-white" aria-current="page">
+                SEMD
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div>
+        <img
+          class="hero-logo"
+          src="/assets/images/csir_logo-original.png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+        <div class="mt-5 p-3 col-md-12 col-lg-6 col-xl-6">
+          <h2 class="display-3 fw-bold p-text-color">
+            Sanitation and Environmental Management Division (SEMD)
           </h2>
         </div>
-        <div class="row">
-          <div class="p-3 col-md-12 col-lg-7 col-xl-7">
-            <h2 class="pb-3 mt-2 fs-2 fw-bold">Organizational Brief</h2>
-            <p class="fs-6">
-              The Institute of Industrial Research is one of the leading
-              Research Institutes of the Council for Scientific and Industrial
-              Research (CSIR), the main Science and Technology Research and
-              Development institution of Ghana.
-            </p>
-            <p class="fs-6">
-              As per its mandate, the Institute works towards creating
-              opportunities to generate and increase incomes within the SMEs to
-              contribute towards food security, foreign exchange earnings and
-              applying cost-effective industrial technologies that are both
-              environmentally friendly and commercially viable. The drive is
-              people empowerment and poverty reduction.
-            </p>
-            <p class="fs-6">
-              Currently the Institute promotes and pursues research and
-              development in the area of Renewable Energy Technologies,
-              Industrial Processes, New Materials, Improved Sanitation, Local
-              Equipment Fabrication and Emerging Information/Communication
-              Technologies.
-            </p>
-            <p class="fs-6">
-              The Institute welcomes investments from individuals, educational
-              institutions, corporate organisations and philanthropists through
-              partnerships and collaborations in order to meet its target of
-              becoming financially independent to fund its own research projects
-              and programmes.
-            </p>
-          </div>
-          <div class="p-3 col-md-12 col-lg-4 col-xl-4 logo-c d-none d-lg-block">
-            <img
-              src="/assets/images/csir_logo-original.png"
-              class="original-logo"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="row text-bg-dark rounded">
-          <div class="col-md-12 col-lg-4 col-xl-4 p-3 custom-border">
-            <h4 class="text-center fs-2 fw-bold">
-              <span class="material-symbols-rounded pe-2 fs-3">
-                foundation </span
-              >Establisment
-            </h4>
-            <p class="fs-6 text-left">
-              The CSIR-IIR which is Ghana’s foremost industrial research and
-              development organization emerged out of the merger of the former
-              Industrial Research Institute (IRI) and Scientific Instrumentation
-              Centre (SIC) in 1998.
-            </p>
-          </div>
-          <div class="col-md-12 col-lg-4 col-xl-4 p-3 custom-border">
-            <h4 class="text-center fs-2 fw-bold">Our Vision</h4>
-            <p class="fs-6 text-center">
-              CSIR-Institute of Industrial Research envisions to be a world
-              class provider of scientific and technological solutions to life’s
-              challenges and opportunities.
-            </p>
-          </div>
-          <div class="col-md-12 col-lg-4 col-xl-4 p-3 custom-border">
-            <h4 class="text-center fs-2 fw-bold">
-              <span class="material-symbols-rounded pe-2 fs-3">
-                lightbulb_2 </span
-              >Our Mission
-            </h4>
-            <p class="fs-6 text-left">
-              To drive national development and global competitiveness in
-              industry through scientific and technological research.
-            </p>
+        <div class="mt-5 p-3 col-md-12 col-lg-6 col-xl-6">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              The SEMD conducts R&D in Technology Process and Products (TPP)
+              particularly in Environmental Management Technologies and
+              Innovation Research. Areas of R&D activities include biodigester
+              efficiency (input-output characterization), comparative study of
+              new digester designs, and generation of electricity from biogas as
+              well as cosmetics product development. Services offered by the
+              SEMD include:
+              <p class="fs-6 d-flex pt-3">
+                <span
+                  class="material-symbols-rounded feature-icon pe-2"
+                  aria-hidden="true"
+                  ><span class="material-symbols-outlined">
+                    check_circle
+                  </span></span
+                >Technology Product and Process Development
+              </p>
+              <p class="fs-6 d-flex">
+                <span
+                  class="material-symbols-rounded feature-icon pe-2"
+                  aria-hidden="true"
+                  >check_circle</span
+                >Process Technological Appraisal
+              </p>
+              <p class="fs-6 d-flex">
+                <span
+                  class="material-symbols-rounded feature-icon pe-2"
+                  aria-hidden="true"
+                  >check_circle</span
+                >Chemical Analysis
+              </p>
+              <p class="fs-6 d-flex">
+                <span
+                  class="material-symbols-rounded feature-icon pe-2"
+                  aria-hidden="true"
+                  >check_circle</span
+                >Charcoal Self-Ignition Tests
+              </p>
+              <p class="fs-6 d-flex">
+                <span
+                  class="material-symbols-rounded feature-icon pe-2"
+                  aria-hidden="true"
+                  >check_circle</span
+                >
+                Bio-digester Design, Construction, Consultancy and >Bio-digester
+                Design, Construction, Consultancy and Training
+              </p>
+              <p class="fs-6 d-flex">
+                <span
+                  class="material-symbols-rounded feature-icon pe-2"
+                  aria-hidden="true"
+                  >check_circle</span
+                >Biomass Characterization
+              </p>
+              <p class="fs-6 d-flex">
+                <span
+                  class="material-symbols-rounded feature-icon pe-2"
+                  aria-hidden="true"
+                  >check_circle</span
+                >Biogas Analysis
+              </p>
+              <p class="fs-6 d-flex">
+                <span
+                  class="material-symbols-rounded feature-icon pe-2"
+                  aria-hidden="true"
+                  >check_circle</span
+                >Factory Waste Water Analysis
+              </p>
+            </div>
           </div>
         </div>
       </div>
-
-      <section class="mb-5 goals-section">
-        <div class="container">
-          <div class="row mt-4 pt-2 pb-3">
-            <div class="col-md-12 col-lg-6 col-xl-6 me-5">
-              <h2 class="pb-3 mt-2 fs-2 fw-bold">Our Strategic Objectives</h2>
-              <p class="fs-6">
-                The strategic objectives are aimed at addressing all the
-                critical areas identified to strategically position the
-                Institute on both the sub–regional and international scenes.
-                They also define the focus and provide a guide for the research
-                and development activities at CSIR - Institute of Industrial
-                Research. The key objectives are as follows:
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6"
-                  >Build competitive advantage by focusing on enhanced delivery
-                  in the Institute’s areas of expertise with technology</span
-                >
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6"
-                  >Become financially independent by identifying and developing
-                  sustainable internal sources of revenue</span
-                >
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6"
-                  >Collaborate globally with the relevant research centres and
-                  industries</span
-                >
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6"
-                  >Attract, maintain and develop the best research minds to the
-                  Institute</span
-                >
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6"
-                  >Pursue social operating mechanisms that empower and inspire
-                  employees</span
-                >
-              </p>
-              <span class="fs-6"
-                >The strategic objectives would be achieved through R&D efforts
-                and programmes by division within the Institute.</span
-              >
-            </div>
-            <div class="col-md-12 col-lg-5 col-xl-5">
-              <h2 class="pb-3 mt-2 fs-2 fw-bold">Our Goals</h2>
-              <p class="fs-6">
-                The CSIR- Institute of Industrial Research plans to achieve the
-                following outcomes through a proper implementation of its
-                strategic plan:
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6"
-                  >Be a globally recognized research institute</span
-                >
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6"
-                  >Be a financially independent institute to fund its own
-                  research projects and programmes</span
-                >
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6">Be an inspiring place to work </span>
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6"
-                  >Be a Centre of Technological Excellence</span
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+    </div>
 
     <!-- FOOTER -->
     <footer class="dark-bg text-white pt-5 pb-4">
@@ -477,6 +434,6 @@
       </div>
     </footer>
 
-    <script src="/assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
