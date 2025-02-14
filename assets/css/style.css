@@ -170,8 +170,10 @@ button.floating-call-btn:focus {
 }
 
 ul.divisions-dropdown {
-  width: 100%;
-  text-wrap: wrap;
+  min-width: 280px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 .hero-section {
@@ -243,7 +245,8 @@ ul.divisions-dropdown {
   text-decoration: none;
   font-size: 0.95rem;
 }
-.nav-link .footer-list .footer-link:hover {
+
+.footer-list.footer-link:hover {
   color: var(--primary-pink);
 }
 
