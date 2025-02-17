@@ -9,3 +9,20 @@ readMoreLink.addEventListener('click', () => {
     readMore.style.display = 'none';
   }
 });
+
+// STAFF FILTER
+document.addEventListener('DOMContentLoaded', function () {
+  document
+    .getElementById('divisionFilter')
+    .addEventListener('change', function () {
+      let selectedDivision = this.value;
+      document.querySelectorAll('.staff-card').forEach(function (card) {
+        let staffDivision = card.getAttribute('data-division');
+        if (selectedDivision === 'all' || staffDivision === selectedDivision) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+});

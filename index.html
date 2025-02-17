@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSIR - Institute of Industrial Engineering</title>
+    <title>CSIR - Institute of Industrial Research</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="shortcut icon"
@@ -55,11 +55,32 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="nav">
           <ul class="navbar-nav nav d-flex gap-4">
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/projects.html">Projects</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle footer-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-light"
+                aria-labelledby="navbarDropdown"
+              >
+                <li><a class="dropdown-item" href="#">Ongoing Projects</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Completed Projects</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Technologies</a>
             </li>
           </ul>
         </div>
@@ -349,7 +370,9 @@
               <a href="#" class="footer-link text-white">Management</a>
             </p>
             <p class="footer-list">
-              <a href="#" class="footer-link text-white">Staff</a>
+              <a href="/pages/staff.html" class="footer-link text-white"
+                >Staff</a
+              >
             </p>
           </div>
 
@@ -433,7 +456,7 @@
           <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 class="text-uppercase font-weight-bold">News & Events</h5>
             <p class="footer-list">
-              <a href="#" class="footer-link text-white">News</a>
+              <a href="/pages/news.html" class="footer-link text-white">News</a>
             </p>
             <p class="footer-list">
               <a href="#" class="footer-link text-white"

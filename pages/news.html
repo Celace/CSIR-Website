@@ -39,9 +39,7 @@
     ></script>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-sm navbar-light bg-white shadow-sm fixed-top"
-    >
+    <nav class="navbar navbar-expand-sm navbar-light bg-white shadow-sm">
       <div class="container">
         <a href="/index.html" class="navbar-brand"
           ><img src="/assets/images/logo.png" class="navbar-brand" alt=""
@@ -65,9 +63,69 @@
             <li class="nav-item">
               <a class="nav-link" href="/index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="divisionDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Divisions</a
+              >
+              <ul
+                class="divisions-dropdown dropdown-menu"
+                aria-labelledby="divisionDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="#semd" data-bs-toggle="tab"
+                    >Sanitation & Environmental M</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#setd" data-bs-toggle="tab"
+                    >Sustainable Energy</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#mmd" data-bs-toggle="tab"
+                    >Materials & Manufacturing</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#edpd" data-bs-toggle="tab"
+                    >Engineering Design & Prototyping</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#metrology"
+                    data-bs-toggle="tab"
+                    >Metrology</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#bsid" data-bs-toggle="tab"
+                    >Business & Information Services</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#eetd" data-bs-toggle="tab"
+                    >Emerging Engineering Technologies</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#prmd" data-bs-toggle="tab"
+                    >Project Resource Mobilization</a
+                  >
+                </li>
+              </ul>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/projects.html">Projects</a>
+            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#">Publications</a>
             </li>
@@ -76,227 +134,76 @@
       </div>
     </nav>
 
-    <main>
-      <div class="container">
-        <div class="row main-section">
-          <h2
-            class="p-3 display-3 text-capitalize text-center fw-bolder p-text-color underline-text"
-          >
-            About Us
-          </h2>
+    <div class="container py-5">
+      <div class="row">
+        <!-- Left Column - News List -->
+        <div class="col-md-8">
+          <h2 class="news-title display-5 p-text-color fw-bold">News Items</h2>
+          <div class="news-item mb-3">
+            <div class="news-date"><span>10</span> JAN</div>
+            <div class="news-content">
+              <h5>
+                <a href="#" class="text-white"
+                  >Revolutionizing Energy Efficiency: Latest Findings in
+                  Industrial Processes</a
+                >
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consequatur illo corporis libero necessitatibus, fuga
+                beatae!.....
+              </p>
+            </div>
+          </div>
+          <div class="news-item mb-3">
+            <div class="news-date"><span>16</span> FEB</div>
+            <div class="news-content">
+              <h5>
+                <a href="#" class="text-white"
+                  >Advancing Smart Manufacturing: The Role of AI in Industrial
+                  Research</a
+                >
+              </h5>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Expedita labore, nisi doloribus porro consectetur
+                consequuntur...
+              </p>
+            </div>
+          </div>
+          <div class="news-item mb-3">
+            <div class="news-date"><span>27</span> MAR</div>
+            <div class="news-content">
+              <h5>
+                <a href="#" class="text-white"
+                  >Cutting-Edge Research on Industrial Waste Recycling
+                  Methods</a
+                >
+              </h5>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Expedita labore, nisi doloribus porro consectetur
+                consequuntur...
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="p-3 col-md-12 col-lg-7 col-xl-7">
-            <h2 class="pb-3 mt-2 fs-2 fw-bold">Organizational Brief</h2>
-            <p class="fs-6">
-              The Institute of Industrial Research is one of the leading
-              Research Institutes of the Council for Scientific and Industrial
-              Research (CSIR), the main Science and Technology Research and
-              Development institution of Ghana.
-            </p>
-            <p class="fs-6">
-              As per its mandate, the Institute works towards creating
-              opportunities to generate and increase incomes within the SMEs to
-              contribute towards food security, foreign exchange earnings and
-              applying cost-effective industrial technologies that are both
-              environmentally friendly and commercially viable. The drive is
-              people empowerment and poverty reduction.
-            </p>
-            <p class="fs-6">
-              Currently the Institute promotes and pursues research and
-              development in the area of Renewable Energy Technologies,
-              Industrial Processes, New Materials, Improved Sanitation, Local
-              Equipment Fabrication and Emerging Information/Communication
-              Technologies.
-            </p>
-            <p class="fs-6">
-              The Institute welcomes investments from individuals, educational
-              institutions, corporate organisations and philanthropists through
-              partnerships and collaborations in order to meet its target of
-              becoming financially independent to fund its own research projects
-              and programmes.
-            </p>
-          </div>
-          <div class="p-3 col-md-12 col-lg-4 col-xl-4 logo-c d-none d-lg-block">
-            <img
-              src="/assets/images/csir_logo-original.png"
-              class="original-logo"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-md-12 col-lg-4 col-xl-4 p-3 custom-border">
-            <h4 class="text-center fs-2 fw-bold">
-              <span class="material-symbols-rounded pe-2 fs-3 pink-text">
-                foundation </span
-              >Establisment
-            </h4>
-            <p class="fs-6 text-left">
-              The CSIR-IIR which is Ghana’s foremost industrial research and
-              development organization emerged out of the merger of the former
-              Industrial Research Institute (IRI) and Scientific Instrumentation
-              Centre (SIC) in 1998.
-            </p>
-          </div>
-          <div class="col-md-12 col-lg-4 col-xl-4 p-3 custom-border">
-            <h4 class="text-center fs-2 fw-bold">
-              <i class="fa-solid fa-binoculars pe-2 fs-3 pink-text"></i>Our
-              Vision
-            </h4>
-            <p class="fs-6">
-              CSIR-Institute of Industrial Research envisions to be a world
-              class provider of scientific and technological solutions to life’s
-              challenges and opportunities.
-            </p>
-          </div>
-          <div class="col-md-12 col-lg-4 col-xl-4 p-3 custom-border">
-            <h4 class="text-center fs-2 fw-bold">
-              <span class="material-symbols-rounded pe-2 fs-3 pink-text">
-                lightbulb_2 </span
-              >Our Mission
-            </h4>
-            <p class="fs-6 text-left">
-              To drive national development and global competitiveness in
-              industry through scientific and technological research.
-            </p>
+
+        <!-- Right Column - Featured News -->
+        <div class="col-md-4 order-first order-md-last py-1">
+          <h5 class="display-5 p-text-color fw-bold">Featured News</h5>
+          <div class="featured-news">
+            <img src="/assets/images/image-3.jpg" alt="Featured News" />
+            <p class="mt-2 text-muted">24 February 2025</p>
+            <h5>
+              <a href="#" class="text-dark text-decoration-none fs-3"
+                >CSIR-IIR DIRECTOR URGES GOVERNMENT TO</a
+              >
+            </h5>
           </div>
         </div>
       </div>
-
-      <section class="mb-5 goals-section">
-        <div class="container">
-          <div class="row mt-4 pt-2 pb-3">
-            <div class="col-md-12 col-lg-6 col-xl-6 me-5">
-              <h2 class="pb-3 mt-2 fs-2 fw-bold">Our Strategic Objectives</h2>
-              <p class="fs-6">
-                The strategic objectives are aimed at addressing all the
-                critical areas identified to strategically position the
-                Institute on both the sub–regional and international scenes.
-                They also define the focus and provide a guide for the research
-                and development activities at CSIR - Institute of Industrial
-                Research. The key objectives are as follows:
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6"
-                  >Build competitive advantage by focusing on enhanced delivery
-                  in the Institute’s areas of expertise with technology</span
-                >
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6"
-                  >Become financially independent by identifying and developing
-                  sustainable internal sources of revenue</span
-                >
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6"
-                  >Collaborate globally with the relevant research centres and
-                  industries</span
-                >
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6"
-                  >Attract, maintain and develop the best research minds to the
-                  Institute</span
-                >
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6"
-                  >Pursue social operating mechanisms that empower and inspire
-                  employees</span
-                >
-              </p>
-              <span class="fs-6"
-                >The strategic objectives would be achieved through R&D efforts
-                and programmes by division within the Institute.</span
-              >
-            </div>
-            <div class="col-md-12 col-lg-5 col-xl-5">
-              <h2 class="pb-3 mt-2 fs-2 fw-bold">Our Goals</h2>
-              <p class="fs-6">
-                The CSIR- Institute of Industrial Research plans to achieve the
-                following outcomes through a proper implementation of its
-                strategic plan:
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6"
-                  >Be a globally recognized research institute</span
-                >
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6"
-                  >Be a financially independent institute to fund its own
-                  research projects and programmes</span
-                >
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6">Be an inspiring place to work </span>
-              </p>
-              <p class="feature-item">
-                <span
-                  class="material-symbols-rounded feature-icon"
-                  aria-hidden="true"
-                  >check_circle</span
-                >
-
-                <span class="fs-6"
-                  >Be a Centre of Technological Excellence</span
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+    </div>
 
     <!-- FOOTER -->
     <footer class="dark-bg text-white pt-5 pb-4">
@@ -305,7 +212,7 @@
           <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 class="text-uppercase font-weight-bold">ABOUT US</h5>
             <p class="footer-list">
-              <a href="/pages/about.html" class="footer-link text-white"
+              <a href="./pages/about.html" class="footer-link text-white"
                 >Organizational Brief</a
               >
             </p>
@@ -324,7 +231,9 @@
               <a href="#" class="footer-link text-white">Management</a>
             </p>
             <p class="footer-list">
-              <a href="#" class="footer-link text-white">Staff</a>
+              <a href="/pages/staff.html" class="footer-link text-white"
+                >Staff</a
+              >
             </p>
           </div>
 
@@ -388,6 +297,21 @@
                 >Partners & Collaborators</a
               >
             </p>
+            <div class="row">
+              <h5 class="text-uppercase fs-6 font-weight-bold">
+                Additional Links
+              </h5>
+
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 1</a>
+              </p>
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 2</a>
+              </p>
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 3</a>
+              </p>
+            </div>
           </div>
 
           <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -403,6 +327,21 @@
             <p class="footer-list">
               <a href="#" class="footer-link text-white">Gallery</a>
             </p>
+            <div class="row">
+              <h5 class="text-uppercase fs-6 font-weight-bold">
+                Additional Links
+              </h5>
+
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 1</a>
+              </p>
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 2</a>
+              </p>
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 3</a>
+              </p>
+            </div>
           </div>
 
           <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -480,6 +419,6 @@
       </div>
     </footer>
 
-    <script src="/assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
