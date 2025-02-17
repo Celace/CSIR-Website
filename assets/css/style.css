@@ -248,6 +248,19 @@ ul.divisions-dropdown {
   color: var(--white);
 }
 
+.division-title,
+.division-description,
+.services-list,
+.division-head,
+.projects-gallery {
+  transition: opacity 0.3s ease;
+}
+
+.loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 /* PROJECTS */
 
 .parallax-inner h1 {

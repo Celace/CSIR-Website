@@ -33,9 +33,7 @@
     />
     <script
       defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     ></script>
   </head>
   <body>
@@ -134,84 +132,48 @@
       </div>
     </nav>
 
-    <div class="container py-5">
-      <h2 class="text-center display-4 fw-bold p-text-color mb-4">
-        Staff Directory
-      </h2>
+    <div class="container mt-4">
+      <!-- Board of Directors Section -->
+      <h4 class="text-center display-5 p-text-color fw-bold mt-4">
+        Board of Directors
+      </h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio,
+        provident, totam sapiente sed et tenetur officiis voluptatem ipsam
+        veritatis vero facilis omnis similique illum praesentium saepe quod
+        incidunt exercitationem assumenda cupiditate perspiciatis amet, unde
+        quisquam placeat. Laborum qui culpa saepe minima distinctio perspiciatis
+        sunt nihil at repellendus quia, ipsum ut, quas modi quos omnis! Quisquam
+        vitae aut eligendi pariatur sint nam perferendis inventore repellat quam
+        reprehenderit. Magni mollitia molestiae iusto reiciendis earum itaque
+        voluptatibus nesciunt, quasi distinctio rerum quas autem incidunt illo
+        officia, sint eaque impedit nihil placeat vitae beatae error, ea quia?
+        Numquam illo commodi enim dicta cumque itaque?
+      </p>
+      <div class="row" id="boardDirectorsContainer"></div>
 
-      <div class="row mb-3">
-        <div class="col-md-4 offset-md-4">
-          <select id="divisionFilter" class="form-select">
-            <option value="all">All Staff</option>
-            <option value="engineering">Senior Members</option>
-            <option value="science">Senior Staff</option>
-            <option value="administration">Junior Staff</option>
-          </select>
-        </div>
+      <!-- Management Section -->
+      <h4 class="text-center display-5 p-text-color fw-bold mt-4">
+        Management
+      </h4>
+      <div class="row" id="managementContainer"></div>
+
+      <!-- Staff Dropdown Filter -->
+      <h4 class="mt-4">Staff</h4>
+      <div class="d-flex justify-content-center mb-4">
+        <select
+          id="staffFilter"
+          class="form-select w-50"
+          onchange="filterStaff()"
+        >
+          <option value="senior-members">Senior Members</option>
+          <option value="senior-staff">Senior Staff</option>
+          <option value="junior-staff">Junior Staff</option>
+        </select>
       </div>
 
-      <div class="staff-section" id="senior-members">
-        <h3 class="text-primary">Senior Members</h3>
-        <div class="row">
-          <div class="col-md-3 staff-card" data-division="engineering">
-            <div class="card shadow-sm">
-              <img
-                src="/assets/images/dir-francis.png"
-                class="card-img-top"
-                alt="Staff Photo"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">Dr. John Doe</h5>
-                <p class="card-text">Head of Engineering</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- More senior members here -->
-        </div>
-      </div>
-
-      <div class="staff-section mt-3 pt-3" id="senior-staff">
-        <h3 class="text-success">Senior Staff</h3>
-        <div class="row">
-          <div class="col-md-3 staff-card" data-division="science">
-            <div class="card shadow-sm">
-              <img
-                src="/assets/images/dir-francis.png"
-                class="card-img-top"
-                alt="Staff Photo"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">Dr. Jane Smith</h5>
-                <p class="card-text">Senior Researcher</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- More senior staff here -->
-        </div>
-      </div>
-
-      <div class="staff-section mt-3 pt-3" id="junior-staff">
-        <h3 class="text-danger">Junior Staff</h3>
-        <div class="row">
-          <div class="col-md-3 staff-card" data-division="administration">
-            <div class="card shadow-sm">
-              <img
-                src="/assets/images/dir-francis.png"
-                class="card-img-top"
-                alt="Staff Photo"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">Emily Davis</h5>
-                <p class="card-text">Admin Assistant</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- More junior staff here -->
-        </div>
-      </div>
+      <!-- Staff Grid -->
+      <div class="row" id="staffContainer"></div>
     </div>
 
     <!-- FOOTER -->
@@ -426,6 +388,7 @@
       </div>
     </footer>
 
+    <script src="/assets/js/staff.js"></script>
     <script src="/assets/js/script.js"></script>
   </body>
 </html>

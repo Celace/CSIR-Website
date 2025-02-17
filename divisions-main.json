@@ -1,0 +1,78 @@
+[
+  {
+    "id": "semd",
+    "name": "Sanitation and Environmental Management Division (SEMD)",
+    "description": "The SEMD conducts R&D in Technology Process and Products (TPP) particularly in Environmental Management Technologies and Innovation Research. Areas of R&D activities include biodigester efficiency (input-output characterization), comparative study of new digester designs, and generation of electricity from biogas as well as cosmetics product development.",
+    "services": [
+      "Technology Product and Process Development",
+      "Process Technological Appraisal",
+      "Chemical Analysis",
+      "Charcoal Self-Ignition Tests",
+      "Bio-digester Design, Construction, Consultancy and Training",
+      "Biomass Characterization",
+      "Biogas Analysis",
+      "Factory Waste Water Analysis"
+    ]
+  },
+  {
+    "id": "setd",
+    "name": "Sustainable Energy Technology Division (SETD)",
+    "description": "SETD conducts R&D to increase knowledge in the generation of power, application of renewable energies as well as technologies and strategies for energy waste reduction. Other areas of R&D activities include 2nd generation biofuels, wind, solar energy and cook stove efficiency testing.",
+    "services": [
+      "Energy Auditing",
+      "Energy Efficiency",
+      "Testing of Cook stoves",
+      "Efficiency of Wood Fuels",
+      "Calorific Value of Materials",
+      "Solar Panel (photovoltaic) System Installation"
+    ]
+  },
+  {
+    "id": "mmd",
+    "name": "Materials and Manufacturing Division (MMD)",
+    "description": "MMD undertakes research and development activities in the areas of materials and manufacturing. Areas of R&D activities include identification, characterization and beneficiation of materials, wood-plastic composite research, fly ash and coupling agents from vegetables oils as well as R&D into high alumina refractories and extraction of bioactive ingredients from plants for herbal drugs.",
+    "services": [
+      "Manufacturing of Laboratory and Industrial Glass wares",
+      "Characterization and Beneficiation of Local Raw Materials",
+      "Herbal Extraction Products",
+      "Kiln, Ovens and Incinerators Construction",
+      "Refractory Bricks"
+    ]
+  },
+  {
+    "id": "edpd",
+    "name": "Engineering Design and Prototyping Division (EDPD)",
+    "description": "The EDPD focuses on providing innovative solutions for mechanical design and development of engineering products as well as piloting of industrial plants. Areas of R&D activities include design and fabrication of SMS Agro-Industrial machinery and R&D into agro-storage facilities.",
+    "services": [
+      "Design and Fabrication of Agro-Industrial Machineries and Equipment",
+      "Engineering Design and Drawing",
+      "Provision of Engineering Services",
+      "Building of Coldhouse for Storage of Vegetables"
+    ]
+  },
+  {
+    "id": "metrology",
+    "name": "Metrology Division",
+    "description": "The Metrology Division is equipped with state-of-the-art calibration laboratories in the areas of Mass, Electricity, Pressure, Acoustic and Temperature. The Department is also equipped with workshops for the repairs of microscopes and electronic measuring equipment as well as offer technical training in the above-mentioned areas.",
+    "services": []
+  },
+  {
+    "id": "bsid",
+    "name": "Business & Information Services Department (BSID)",
+    "description": "The Business and Information Services Department of CSIR-IIR assists in transfer of technologies (commercialisation of research) and other services to clients. The department’s support focuses on its core activities including business development, marketing, IT services, library services, and management support services.",
+    "services": [
+      "Business Development: Preparation of Business Plans, Marketing Plans, Proposals and MOUs",
+      "Marketing: Customer prospecting for products and services of the Institute",
+      "Customer Services: Customer follow-ups, complaints and feedbacks; Customer database management",
+      "IT services: Management of staff webmail and Institute`s website, development of biometric attendance management software, servicing of ICT equipment, provision of IT services",
+      "Library services: Scanning of documents, coordinating Institute`s monthly seminar, classifying and coding of research papers, keeping repository of the Institute, assisting people to locate research materials",
+      "Management support services: Preparation of commercialisation reports, Annual reports, Revenue projections, employment interviews, promotion assessment, serving on management committees"
+    ]
+  },
+  {
+    "id": "eetd",
+    "name": "Emerging Engineering Technologies Division (EETD)",
+    "description": "The EETD focuses on the adoption and implementation of cutting-edge engineering technologies to solve real-world challenges. The division engages in R&D across emerging fields such as AI, IoT, advanced manufacturing, and smart systems.",
+    "services": []
+  }
+]
