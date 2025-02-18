@@ -98,15 +98,12 @@
                   >
                 </li>
                 <li>
-                  <a
-                    class="dropdown-item"
-                    href="#metrology"
-                    data-bs-toggle="tab"
+                  <a class="dropdown-item" href="#md" data-bs-toggle="tab"
                     >Metrology</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#bsid" data-bs-toggle="tab"
+                  <a class="dropdown-item" href="#bisd" data-bs-toggle="tab"
                     >Business & Information Services</a
                   >
                 </li>
@@ -175,6 +172,10 @@
         />
       </div>
     </section>
+
+    <div id="divisionContent" class="container mt-4">
+      <!-- SEMD information will load here by default -->
+    </div>
 
     <!-- <div class="container">
       <div class="row">
@@ -259,9 +260,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="container pb-5 text-center">
+    <!-- <div class="container pb-5 text-center">
       <div class="row">
         <div class="col-md-12 col-lg-4 col-xl-4 pb-3 justify-content-center">
           <h3 class="text-left p-text-color fs-3 fw-bold">Head of Division</h3>
@@ -272,11 +273,11 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Dr. Francis Agyenim Boateng</h5>
+              <h5 class="card-title">Dr. Rapheal Nsiah-Gyambibi</h5>
               <p class="card-text">
                 <a href="#" class="p-text-color">Profile of HOD</a>
               </p>
-              <a href="#" class="btn btn-primary">Get in touch</a>
+              <p class="fs-6 text-muted small">rngyambibi@csir-iir.com</p>
             </div>
           </div>
         </div>
@@ -309,47 +310,6 @@
       </div>
     </div> -->
 
-    <div class="container" id="divisionContent">
-      <div class="row">
-        <div class="mt-5 p-3 col-md-12 col-lg-6 col-xl-6">
-          <h2 class="display-4 fw-bold p-text-color division-title"></h2>
-          <p class="division-description"></p>
-        </div>
-        <div class="mt-5 p-3 col-md-12 col-lg-6 col-xl-6">
-          <div class="card shadow-sm">
-            <div class="card-body services-container">
-              <p class="fs-6">Services offered by the division include:</p>
-              <div class="services-list"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container pb-5 text-center">
-      <div class="row">
-        <div class="col-md-12 col-lg-4 col-xl-4 pb-3 justify-content-center">
-          <h3 class="text-left p-text-color fs-3 fw-bold">Head of Division</h3>
-          <div class="card division-head">
-            <img class="card-img-top hod-image" alt="Head of Division" />
-            <div class="card-body">
-              <h5 class="card-title hod-name"></h5>
-              <p class="card-text">
-                <a class="p-text-color hod-profile" href="#">Profile of HOD</a>
-              </p>
-              <a class="btn btn-primary hod-contact" href="#">Get in touch</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 col-lg-8 col-xl-8">
-          <h5 class="fs-4 text-center pb-3 p-text-color fw-bold">
-            Projects By The Division
-          </h5>
-          <div class="photo-gallery projects-gallery"></div>
-        </div>
-      </div>
-    </div>
-
     <!-- FOOTER -->
     <footer class="dark-bg text-white pt-5 pb-4">
       <div class="container text-md-left justify-content-center">
@@ -370,13 +330,19 @@
               <a href="#" class="footer-link text-white">Our People</a>
             </p>
             <p class="footer-list">
-              <a href="#" class="footer-link text-white">Board of Directors</a>
+              <a href="/pages/staff.html" class="footer-link text-white"
+                >Board of Directors</a
+              >
             </p>
             <p class="footer-list">
-              <a href="#" class="footer-link text-white">Management</a>
+              <a href="/pages/staff.html" class="footer-link text-white"
+                >Management</a
+              >
             </p>
             <p class="footer-list">
-              <a href="#" class="footer-link text-white">Staff</a>
+              <a href="/pages/staff.html" class="footer-link text-white"
+                >Staff</a
+              >
             </p>
           </div>
 
@@ -408,38 +374,32 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle footer-link"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Publications
-                </a>
-                <ul
-                  class="dropdown-menu dropdown-menu-light"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <li>
-                    <a class="dropdown-item" href="#">Refereed Journals</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Technical Repors</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Annual Reports</a>
-                  </li>
-                </ul>
-              </li>
             </ul>
+            <p class="footer-list">
+              <a href="/pages/publications.html" class="footer-link text-white"
+                >Research Publications</a
+              >
+            </p>
             <p class="footer-list">
               <a href="#" class="footer-link text-white"
                 >Partners & Collaborators</a
               >
             </p>
+            <div class="row">
+              <h5 class="text-uppercase fs-6 font-weight-bold">
+                Additional Links
+              </h5>
+
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 1</a>
+              </p>
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 2</a>
+              </p>
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 3</a>
+              </p>
+            </div>
           </div>
 
           <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -455,6 +415,21 @@
             <p class="footer-list">
               <a href="#" class="footer-link text-white">Gallery</a>
             </p>
+            <div class="row">
+              <h5 class="text-uppercase fs-6 font-weight-bold">
+                Additional Links
+              </h5>
+
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 1</a>
+              </p>
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 2</a>
+              </p>
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 3</a>
+              </p>
+            </div>
           </div>
 
           <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -493,7 +468,7 @@
 
         <div class="row align-items-center">
           <div class="col-md-7 col-lg-8">
-            <p>Copyright 2025 All Rights Reserved</p>
+            <p>Copyright &copy 2025. All Rights Reserved</p>
             <a href="#"></a>
           </div>
 
@@ -533,5 +508,6 @@
     </footer>
 
     <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/divisions.js"></script>
   </body>
 </html>
