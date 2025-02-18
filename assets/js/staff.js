@@ -29,10 +29,10 @@ const staffData = [
     category: 'board',
   },
   {
-    name: 'Jane Doe',
-    position: 'CEO',
+    name: 'Mrs. Dorothy Awanyo',
+    position: 'HR Manager',
     contact: 'jane@example.com',
-    image: 'https://via.placeholder.com/150',
+    image: '/assets/images/hr-image.png',
     category: 'management',
   },
   {

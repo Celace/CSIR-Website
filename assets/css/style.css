@@ -290,6 +290,31 @@ ul.divisions-dropdown {
   padding: 20% 0;
 }
 
+/* PUBLICATIONS */
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  background-color: var(--dark);
+  padding-top: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.sidebar a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+}
+.sidebar a:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+.content {
+  margin-left: 260px;
+  padding: 20px;
+}
+
 /* FOOTER */
 
 .footer-link {
@@ -297,7 +322,7 @@ ul.divisions-dropdown {
   font-size: 0.95rem;
 }
 
-.footer-list.footer-link:hover {
+p.footer-list:hover {
   color: var(--primary-pink);
 }
 
@@ -390,6 +415,26 @@ ul .dropdown-menu {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+  }
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  .sidebar.show {
+    transform: translateX(0);
+  }
+  .content {
+    margin-left: 0;
+  }
+  .toggle-btn {
+    position: absolute;
+    top: 23%;
+    right: 15px;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
   }
 }
 

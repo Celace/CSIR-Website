@@ -1,0 +1,61 @@
+{
+  "publications": {
+    "journals": {
+      "title": "Refereed Journals",
+      "publications": [
+        {
+          "title": "Journal of AI Research",
+          "authors": "John Doe, Jane Smith",
+          "year": 2024,
+          "url": "https://example.com/journal-ai-research"
+        },
+        {
+          "title": "Advances in Machine Learning",
+          "authors": "Alice Brown, Bob White",
+          "year": 2023,
+          "url": "https://example.com/advances-ml"
+        },
+        {
+          "title": "Contribution to AI",
+          "authors": "John Snow, Alan Walker",
+          "year": 2025,
+          "url": "https://example.com/advances-ml"
+        }
+      ]
+    },
+    "reports": {
+      "title": "Technical Reports",
+      "publications": [
+        {
+          "title": "Deep Learning in Healthcare",
+          "authors": "David Lee, Emma Clark",
+          "year": 2024,
+          "url": "https://example.com/deep-learning-healthcare"
+        },
+        {
+          "title": "Cybersecurity Trends 2022",
+          "authors": "Chris Evans, Lucy Adams",
+          "year": 2022,
+          "url": "https://example.com/cybersecurity-trends"
+        }
+      ]
+    },
+    "annual": {
+      "title": "Annual Reports",
+      "publications": [
+        {
+          "title": "Annual Research Report 2023",
+          "authors": "Research Institute",
+          "year": 2023,
+          "url": "https://example.com/annual-report-2023"
+        },
+        {
+          "title": "Annual Research Report 2022",
+          "authors": "Research Institute",
+          "year": 2022,
+          "url": "https://example.com/annual-report-2022"
+        }
+      ]
+    }
+  }
+}

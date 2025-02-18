@@ -10,7 +10,36 @@ readMoreLink.addEventListener('click', () => {
   }
 });
 
-// STAFF FILTER
+// PUBLICATIONS
+async function fetchPublications(category) {
+  try {
+    const response = await fetch('/publications_db.json'); // Fetch the JSON file
+    const data = await response.json();
+
+    if (data.publications && data.publications[category]) {
+      const categoryData = data.publications[category];
+      let content = `<h3>${categoryData.title}</h3>`;
+      categoryData.publications.forEach((pub) => {
+        content += `<p><a href="${pub.url}" class="text-dark" target="_blank">${pub.title}</a> - Author(s): ${pub.authors} (${pub.year})</p>`;
+      });
+      document.getElementById('publications').innerHTML = content;
+    } else {
+      document.getElementById('publications').innerHTML =
+        '<h3>No publications found.</h3>';
+    }
+  } catch (error) {
+    console.error('Error fetching publications:', error);
+  }
+}
+// Call fetchPublications('journals') to display it by default when the page loads
+document.addEventListener('DOMContentLoaded', function () {
+  fetchPublications('journals');
+});
+
+function toggleSidebar() {
+  const pubBtn = document.querySelector('.pub-btn');
+  document.getElementById('sidebar').classList.toggle('show');
+}
 
 // DIVISIONS FILTER
 document.addEventListener('DOMContentLoaded', () => {
