@@ -402,6 +402,38 @@ ul .dropdown-menu {
   object-fit: cover;
 }
 
+/* LABORATORY PAGE */
+.lab-section {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  height: 60vh;
+}
+.facility-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.facility-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.gradient-text {
+  background: linear-gradient(45deg, #7ebee9, #4e4376);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.modal-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.modal-img-container img {
+  max-height: 70vh;
+  width: auto;
+}
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
