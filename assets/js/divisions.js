@@ -61,18 +61,17 @@ document.addEventListener('DOMContentLoaded', function () {
                                 </div>
                                 <div class="col-md-12 col-lg-8 col-xl-8">
                                     <h5 class="fs-4 text-center pb-3 p-text-color fw-bold">Projects By The Division</h5>
-                                    <div class="photo-gallery">
-                                        <div class="column">
-                                            ${division.projects
-                                              .map(
-                                                (project) => `
-                                                <div class="photo">
-                                                    <img src="${project}" alt="Project Image">
-                                                </div>
-                                            `
-                                              )
-                                              .join('')}
-                                        </div>
+                                    <div class="row g-4">
+                                      ${division.projects
+                                        .map(
+                                          (project, index) => `
+                                          <div class="col-md-4 col-sm-6 gallery-item">
+                                             <img src="${project.image}" class="gallery-img" alt="${project.name}" />
+                                            <p class="text-center mt-2">${project.name}</p>
+                                          </div>
+                                        `
+                                        )
+                                        .join('')}
                                     </div>
                                 </div>
                             </div>
