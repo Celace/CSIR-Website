@@ -39,7 +39,7 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md bg-white fixed-top shadow-sm">
+    <!-- <nav class="navbar navbar-expand-md bg-white fixed-top shadow-sm">
       <div class="container">
         <a href="#" class="navbar-brand"
           ><img src="./assets/images/logo.png" class="navbar-brand" alt=""
@@ -87,7 +87,99 @@
           </ul>
         </div>
       </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-md bg-white fixed-top shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="/assets/images/logo.png" class="navbar-brand" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sidebarNav"
+          aria-controls="sidebarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-none d-lg-block">
+          <ul class="navbar-nav nav d-flex gap-4">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle footer-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-light"
+                aria-labelledby="navbarDropdown"
+              >
+                <li><a class="dropdown-item" href="#">Ongoing Projects</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Completed Projects</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/publications.html"
+                >Publications</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Technologies</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+
+    <!-- Sidebar Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebarNav">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fs-3 fw-bold">Menu</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="container offcanvas-body">
+        <ul class="navbar-nav nav d-flex gap-4">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/about.html"
+              >Organizational Brief</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/divisions.html">Divisions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/news.html">Staff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/laboratory-facilities.html"
+              >Laboratory Facilities</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/news.html">News</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -447,15 +539,17 @@
           </div>
 
           <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase fw-bold">Contact Us</h5>
+            <h5 class="text-uppercase fw-bold">Get In Touch</h5>
             <p class="footer-list">
-              <a href="#" class="footer-link text-white">Enquiries</a>
+              <a href="/pages/contact_us.html" class="footer-link text-white"
+                >Contact Us</a
+              >
             </p>
             <p class="footer-list">
               <a href="#" class="footer-link text-white">Careers</a>
             </p>
             <p class="footer-list">
-              <a href="#" class="footer-link text-white">FAQ</a>
+              <a href="/pages/faq.html" class="footer-link text-white">FAQ</a>
             </p>
             <p class="text-white footer-link">
               <span class="material-symbols-rounded pe-2"> mail </span>
@@ -466,8 +560,10 @@
               <span class="position-absolute"
                 ><a
                   href="https://maps.app.goo.gl/pXSfc7gijjdzoppE9"
+                  target="_blank"
                   class="text-decoration-none text-white"
-                  >92 Boundary Rd, Accra</a
+                  >92 Boundary Rd. Otinshi, ARS Junction, Near American House,
+                  East Legon</a
                 ></span
               >
             </p>
@@ -490,7 +586,10 @@
             <div class="text-center text-md-right">
               <ul class="list-unstyled list-inline">
                 <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-sm text-white socials"
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100069846069125"
+                    target="_blank"
+                    class="btn-floating btn-sm text-white socials"
                     ><i class="fab fa-facebook"></i
                   ></a>
                 </li>
@@ -500,18 +599,31 @@
                   ></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-sm text-white socials"
+                  <a
+                    href="https://x.com/csir_iir"
+                    target="_blank"
+                    class="btn-floating btn-sm text-white socials"
                     ><i class="fab fa-x-twitter"></i
                   ></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-sm text-white socials"
+                  <a
+                    href="https://www.linkedin.com/company/csir---institute-of-industrial-research/"
+                    target="_blank"
+                    class="btn-floating btn-sm text-white socials"
                     ><i class="fab fa-linkedin-in"></i
                   ></a>
                 </li>
                 <li class="list-inline-item">
                   <a href="#" class="btn-floating btn-sm text-white socials"
                     ><i class="fab fa-tiktok"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://youtube.com/@csir-iir?si=WS9iBqyUGMmBaXPC"
+                    class="btn-floating btn-sm text-white socials"
+                    ><i class="fab fa-youtube"></i
                   ></a>
                 </li>
               </ul>

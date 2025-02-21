@@ -1,7 +1,7 @@
 // Staff data (Replace with actual staff details)
 const staffData = [
   {
-    name: 'Dr. John Smith',
+    name: 'Dr. Francis Agyenim Boateng',
     position: 'Chairman',
     contact: 'john@example.com',
     image: '/assets/images/dir-francis.png',

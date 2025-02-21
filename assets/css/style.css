@@ -53,9 +53,19 @@ html {
   height: 100px;
   margin-top: -10px;
 }
-.nav-item .nav-link:hover {
-  color: var(--primary-color);
+
+.offcanvas.offcanvas-end {
+  width: 250px;
+  background-color: var(--dark);
+  color: #ffffff;
 }
+.offcanvas-backdrop.show {
+  opacity: 0.5;
+}
+.offcanvas-body .nav-link {
+  color: #ffffff;
+}
+
 .dir-img {
   object-fit: cover;
   display: flex;
@@ -423,6 +433,33 @@ ul.divisions-dropdown {
   opacity: 1; /* Show on hover */
 }
 
+/* CONTACT US PAGE */
+.contact-card {
+  transition: transform 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #0d6efd;
+}
+
+.social-icon {
+  transition: color 0.3s ease;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.social-icon:hover {
+  color: var(--primary-color);
+}
+
 /* FOOTER */
 
 .footer-link {
@@ -508,6 +545,33 @@ ul .dropdown-menu {
   width: 100%;
   height: 250px;
   object-fit: cover;
+}
+
+/* FAQ PAGE */
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 50px 20px;
+}
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+.accordion-button {
+  background: transparent;
+  color: white;
+  border: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.faq-image {
+  max-width: 500px;
+  margin-top: -15%;
 }
 
 /* LABORATORY PAGE */

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSIR - Institute of Industrial Research</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/csir.png"
+      type="image/x-icon"
+    />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS FRAMEWORK -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-white shadow-sm">
+      <div class="container">
+        <a href="/index.html" class="navbar-brand">
+          <img src="/assets/images/logo.png" class="navbar-brand" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sidebarNav"
+          aria-controls="sidebarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-none d-lg-block">
+          <ul class="navbar-nav nav d-flex gap-4">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/publications.html"
+                >Publications</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Technologies</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebarNav">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fs-3 fw-bold">Menu</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="container offcanvas-body">
+        <ul class="navbar-nav nav d-flex gap-4">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/about.html"
+              >Organizational Brief</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/divisions.html">Divisions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/news.html">Staff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/laboratory-facilities.html"
+              >Laboratory Facilities</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/news.html">News</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-7 mt-2 mt-5">
+          <h3 class="display-5 fw-bold p-text-color">
+            Looking for help? Here are our most frequently asked questions
+          </h3>
+          <p class="fs-6 pt-3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+            quibusdam, nam cum dolor blanditiis dolore quisquam voluptates eaque
+            architecto libero!
+          </p>
+        </div>
+        <div class="col-md-12 col-lg-5">
+          <img src="/assets/images/FAQs.png" class="faq-image" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container faq-container">
+      <h2 class="text-center fs-1 fw-bold p-text-color mb-4">
+        Frequently Asked Questions
+      </h2>
+
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item glass-card">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq1"
+            >
+              What is the mission of the research institute?
+            </button>
+          </h2>
+          <div
+            id="faq1"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Our mission is to advance scientific knowledge and contribute to
+              technological innovation.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item glass-card mt-3">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq2"
+            >
+              How can I collaborate with the institute?
+            </button>
+          </h2>
+          <div
+            id="faq2"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              You can collaborate through research partnerships, joint projects,
+              or funding opportunities.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item glass-card mt-3">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq3"
+            >
+              How can I collaborate with the institute?
+            </button>
+          </h2>
+          <div
+            id="faq3"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              You can collaborate through research partnerships, joint projects,
+              or funding opportunities.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="dark-bg text-white pt-5 pb-4">
+      <div class="container text-md-left justify-content-center">
+        <div class="row text-md-left justify-content-center">
+          <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase font-weight-bold">ABOUT US</h5>
+            <p class="footer-list">
+              <a href="/pages/about.html" class="footer-link text-white"
+                >Organizational Brief</a
+              >
+            </p>
+            <p class="footer-list">
+              <a href="/pages/divisions.html" class="footer-link text-white"
+                >Divisions</a
+              >
+            </p>
+            <p class="footer-list">
+              <a href="#" class="footer-link text-white">Our People</a>
+            </p>
+            <p class="footer-list">
+              <a href="#" class="footer-link text-white">Board of Directors</a>
+            </p>
+            <p class="footer-list">
+              <a href="#" class="footer-link text-white">Management</a>
+            </p>
+            <p class="footer-list">
+              <a href="/pages/staff.html" class="footer-link text-white"
+                >Staff</a
+              >
+            </p>
+          </div>
+
+          <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase font-weight-bold">Research</h5>
+            <p class="footer-list">
+              <a
+                href="/pages/laboratory-facilities.html"
+                class="footer-link text-white"
+                >Laboratory Facilities</a
+              >
+            </p>
+            <p class="footer-list">
+              <a href="/pages/publications.html" class="footer-link text-white"
+                >Research Publications</a
+              >
+            </p>
+            <p class="footer-list">
+              <a href="#" class="footer-link text-white"
+                >Partners & Collaborators</a
+              >
+            </p>
+            <div class="row">
+              <h5 class="text-uppercase fs-6 font-weight-bold">
+                Additional Links
+              </h5>
+
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 1</a>
+              </p>
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 2</a>
+              </p>
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 3</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase font-weight-bold">News & Events</h5>
+            <p class="footer-list">
+              <a href="/pages/news.html" class="footer-link text-white">News</a>
+            </p>
+            <p class="footer-list">
+              <a href="#" class="footer-link text-white"
+                >Events & Announcements</a
+              >
+            </p>
+            <p class="footer-list">
+              <a href="/pages/gallery.html" class="footer-link text-white"
+                >Gallery</a
+              >
+            </p>
+            <div class="row">
+              <h5 class="text-uppercase fs-6 font-weight-bold">
+                Additional Links
+              </h5>
+
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 1</a>
+              </p>
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 2</a>
+              </p>
+              <p class="footer-list">
+                <a href="#" class="footer-link text-white">Link 3</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase fw-bold">Get In Touch</h5>
+            <p class="footer-list">
+              <a href="/pages/contact_us.html" class="footer-link text-white"
+                >Contact Us</a
+              >
+            </p>
+            <p class="footer-list">
+              <a href="#" class="footer-link text-white">Careers</a>
+            </p>
+            <p class="footer-list">
+              <a href="/pages/faq.html" class="footer-link text-white">FAQ</a>
+            </p>
+            <p class="text-white footer-link">
+              <span class="material-symbols-rounded pe-2"> mail </span>
+              <span class="position-absolute"></span>
+            </p>
+            <p class="text-white footer-link">
+              <span class="material-symbols-rounded pe-2"> location_on </span>
+              <span class="position-absolute"
+                ><a
+                  href="https://maps.app.goo.gl/pXSfc7gijjdzoppE9"
+                  target="_blank"
+                  class="text-decoration-none text-white"
+                  >92 Boundary Rd, Accra</a
+                ></span
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 col-lg-3 col-xl-3"></div>
+        </div>
+
+        <hr class="mb-4" />
+
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>Copyright &copy 2025. All Rights Reserved</p>
+            <a href="#"></a>
+          </div>
+
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100069846069125"
+                    target="_blank"
+                    class="btn-floating btn-sm text-white socials"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white socials"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://x.com/csir_iir"
+                    target="_blank"
+                    class="btn-floating btn-sm text-white socials"
+                    ><i class="fab fa-x-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.linkedin.com/company/csir---institute-of-industrial-research/"
+                    target="_blank"
+                    class="btn-floating btn-sm text-white socials"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white socials"
+                    ><i class="fab fa-tiktok"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white socials"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
