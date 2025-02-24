@@ -33,122 +33,266 @@
     />
     <script
       defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
     ></script>
+    <!-- Custom CSS -->
+    <style>
+      .header-section {
+        background: linear-gradient(135deg, #2c3e50, #3498db);
+        color: white;
+        padding: 3rem 0;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .header-section h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+      .nav-tabs {
+        border-bottom: 2px solid #3498db;
+      }
+      .nav-link {
+        color: #555;
+        font-weight: 600;
+        padding: 1rem 2rem;
+        transition: all 0.3s ease;
+        border-radius: 0.5rem 0.5rem 0 0;
+      }
+      .nav-link:hover {
+        color: #3498db;
+        background-color: #f8f9fa;
+      }
+      .nav-link.active {
+        color: #fff;
+        background-color: #3498db;
+        border: none;
+        box-shadow: inset 0 -2px 0 #2c3e50; /* Subtle inner shadow for depth */
+      }
+      .tab-pane {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 0 0.5rem 0.5rem 0.5rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        min-height: 400px;
+      }
+      .section-label {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 1.5rem;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 0.5rem;
+      }
+      .publication-item {
+        border-bottom: 1px solid #eee;
+        padding: 1rem 0;
+        transition: background 0.2s ease;
+      }
+      .publication-item:hover {
+        background: #f8f9fa;
+      }
+      .publication-item h5 {
+        color: #2c3e50;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+      .publication-item p {
+        color: #666;
+        font-size: 0.95rem;
+        margin: 0;
+      }
+      @media (max-width: 768px) {
+        .nav-link {
+          padding: 0.75rem 1rem;
+        }
+        .header-section h1 {
+          font-size: 2rem;
+        }
+        .section-label {
+          font-size: 1.25rem;
+        }
+      }
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-md bg-white shadow-sm">
       <div class="container">
-        <a href="/index.html" class="navbar-brand"
-          ><img src="/assets/images/logo.png" class="navbar-brand" alt=""
-        /></a>
+        <a href="/index.html" class="navbar-brand">
+          <img src="/assets/images/logo.png" class="navbar-brand" alt="" />
+        </a>
         <button
-          class="navbar-toggler d-lg-none"
+          class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavId"
-          aria-controls="collapsibleNavId"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sidebarNav"
+          aria-controls="sidebarNav"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="collapsibleNavId"
-        >
+        <div class="d-none d-lg-block">
           <ul class="navbar-nav nav d-flex gap-4">
-            <li class="nav-item">
-              <a class="nav-link" href="/index.html">Home</a>
-            </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle footer-link"
                 href="#"
-                id="divisionDropdown"
+                id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                >Divisions</a
               >
+                Projects
+              </a>
               <ul
-                class="divisions-dropdown dropdown-menu"
-                aria-labelledby="divisionDropdown"
+                class="dropdown-menu dropdown-menu-light"
+                aria-labelledby="navbarDropdown"
               >
+                <li><a class="dropdown-item" href="#">Ongoing Projects</a></li>
                 <li>
-                  <a class="dropdown-item" href="#semd" data-bs-toggle="tab"
-                    >Sanitation & Environmental M</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#setd" data-bs-toggle="tab"
-                    >Sustainable Energy</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#mmd" data-bs-toggle="tab"
-                    >Materials & Manufacturing</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#edpd" data-bs-toggle="tab"
-                    >Engineering Design & Prototyping</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="#metrology"
-                    data-bs-toggle="tab"
-                    >Metrology</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#bsid" data-bs-toggle="tab"
-                    >Business & Information Services</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#eetd" data-bs-toggle="tab"
-                    >Emerging Engineering Technologies</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#prmd" data-bs-toggle="tab"
-                    >Project Resource Mobilization</a
-                  >
+                  <a class="dropdown-item" href="#">Completed Projects</a>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/projects.html">Projects</a>
+              <a class="nav-link" href="/pages/publications.html"
+                >Publications</a
+              >
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="#">Publications</a>
+              <a class="nav-link" href="#">Technologies</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <button class="pub-btn toggle-btn d-md-none" onclick="toggleSidebar()">
-      ☰
-    </button>
-    <div class="sidebar d-md-block" id="sidebar">
-      <a href="#" onclick="fetchPublications('journals')">Refereed Journals</a>
-      <a href="#" onclick="fetchPublications('reports')">Technical Reports</a>
-      <a href="#" onclick="fetchPublications('annual')">Annual Reports</a>
-    </div>
-    <div class="content">
-      <h3 class="text-center display-5 my-3 fw-bold p-text-color">
-        Research Publications
-      </h3>
-      <div id="publications" class="publication-content"></div>
+    <!-- Sidebar Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebarNav">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fs-3 fw-bold">Menu</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="container offcanvas-body">
+        <ul class="navbar-nav nav d-flex gap-4">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/about.html"
+              >Organizational Brief</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/divisions.html">Divisions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/news.html">Staff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/laboratory-facilities.html"
+              >Laboratory Facilities</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/news.html">News</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
+    <!-- Header Section -->
+    <header class="header-section">
+      <div class="container">
+        <h1>Publications</h1>
+        <p>Explore our latest research outputs and reports</p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+      <!-- Tabs Navigation -->
+      <ul class="nav nav-tabs" id="publicationsTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="journals-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#journals"
+            type="button"
+            role="tab"
+            aria-controls="journals"
+            aria-selected="true"
+          >
+            Refereed Journals
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="technical-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#technical"
+            type="button"
+            role="tab"
+            aria-controls="technical"
+            aria-selected="false"
+          >
+            Technical Reports
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="annual-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#annual"
+            type="button"
+            role="tab"
+            aria-controls="annual"
+            aria-selected="false"
+          >
+            Annual Reports
+          </button>
+        </li>
+      </ul>
+
+      <!-- Tab Content -->
+      <div class="tab-content" id="publicationsTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="journals"
+          role="tabpanel"
+          aria-labelledby="journals-tab"
+        >
+          <div id="journals-content"></div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="technical"
+          role="tabpanel"
+          aria-labelledby="technical-tab"
+        >
+          <div id="technical-content"></div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="annual"
+          role="tabpanel"
+          aria-labelledby="annual-tab"
+        >
+          <div id="annual-content"></div>
+        </div>
+      </div>
+    </main>
+
     <!-- FOOTER -->
-    <!-- <footer class="dark-bg text-white pt-5 pb-4">
+    <footer class="dark-bg text-white pt-5 pb-4">
       <div class="container text-md-left justify-content-center">
         <div class="row text-md-left justify-content-center">
           <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -162,9 +306,6 @@
               <a href="/pages/divisions.html" class="footer-link text-white"
                 >Divisions</a
               >
-            </p>
-            <p class="footer-list">
-              <a href="#" class="footer-link text-white">Our People</a>
             </p>
             <p class="footer-list">
               <a href="#" class="footer-link text-white">Board of Directors</a>
@@ -181,33 +322,13 @@
 
           <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 class="text-uppercase font-weight-bold">Research</h5>
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle footer-link"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Laboratory Facilities
-                </a>
-                <ul
-                  class="dropdown-menu dropdown-menu-light"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <li><a class="dropdown-item" href="#">Biomass</a></li>
-                  <li><a class="dropdown-item" href="#">Cook Stove</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Glass Blowing</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Metrology</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+            <p class="footer-list">
+              <a
+                href="/pages/laboratory-facilities.html"
+                class="footer-link text-white"
+                >Laboratory Facilities</a
+              >
+            </p>
             <p class="footer-list">
               <a href="/pages/publications.html" class="footer-link text-white"
                 >Research Publications</a
@@ -245,9 +366,6 @@
                 >Events & Announcements</a
               >
             </p>
-            <p class="footer-list">
-              <a href="#" class="footer-link text-white">Gallery</a>
-            </p>
             <div class="row">
               <h5 class="text-uppercase fs-6 font-weight-bold">
                 Additional Links
@@ -266,27 +384,31 @@
           </div>
 
           <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase fw-bold">Contact Us</h5>
+            <h5 class="text-uppercase fw-bold">Get In Touch</h5>
             <p class="footer-list">
-              <a href="#" class="footer-link text-white">Enquiries</a>
+              <a href="/pages/contact_us.html" class="footer-link text-white"
+                >Contact Us</a
+              >
             </p>
             <p class="footer-list">
               <a href="#" class="footer-link text-white">Careers</a>
             </p>
             <p class="footer-list">
-              <a href="#" class="footer-link text-white">FAQ</a>
+              <a href="/pages/faq.html" class="footer-link text-white">FAQ</a>
             </p>
             <p class="text-white footer-link">
               <span class="material-symbols-rounded pe-2"> mail </span>
-              <span class="position-absolute"></span>
+              <span class="position-absolute">info@csir-iir.com</span>
             </p>
             <p class="text-white footer-link">
               <span class="material-symbols-rounded pe-2"> location_on </span>
               <span class="position-absolute"
                 ><a
                   href="https://maps.app.goo.gl/pXSfc7gijjdzoppE9"
+                  target="_blank"
                   class="text-decoration-none text-white"
-                  >92 Boundary Rd, Accra</a
+                  >92 Boundary Rd. Otinshi, ARS Junction, Near American House,
+                  East Legon</a
                 ></span
               >
             </p>
@@ -301,7 +423,7 @@
 
         <div class="row align-items-center">
           <div class="col-md-7 col-lg-8">
-            <p>Copyright &copy 2025. All Rights Reserved</p>
+            <p>Copyright &copy 2025 CSIR-IIR. All Rights Reserved</p>
             <a href="#"></a>
           </div>
 
@@ -309,28 +431,51 @@
             <div class="text-center text-md-right">
               <ul class="list-unstyled list-inline">
                 <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-sm text-white socials"
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100069846069125"
+                    target="_blank"
+                    class="btn-floating btn-sm text-white socials"
                     ><i class="fab fa-facebook"></i
                   ></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-sm text-white socials"
+                  <a
+                    href="https://www.instagram.com/csir_iir?igsh=MTFxYXp0cmdrMWZsYw=="
+                    target="_blank"
+                    class="btn-floating btn-sm text-white socials"
                     ><i class="fab fa-instagram"></i
                   ></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-sm text-white socials"
+                  <a
+                    href="https://x.com/csir_iir"
+                    target="_blank"
+                    class="btn-floating btn-sm text-white socials"
                     ><i class="fab fa-x-twitter"></i
                   ></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-sm text-white socials"
+                  <a
+                    href="https://www.linkedin.com/company/csir---institute-of-industrial-research/"
+                    target="_blank"
+                    class="btn-floating btn-sm text-white socials"
                     ><i class="fab fa-linkedin-in"></i
                   ></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-sm text-white socials"
+                  <a
+                    href="https://www.tiktok.com/@csir_iir?_t=ZM-8uBHSAYtVaf&_r=1"
+                    target="_blank"
+                    class="btn-floating btn-sm text-white socials"
                     ><i class="fab fa-tiktok"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://youtube.com/@csir-iir?si=WS9iBqyUGMmBaXPC"
+                    target="_blank"
+                    class="btn-floating btn-sm text-white socials"
+                    ><i class="fab fa-youtube"></i
                   ></a>
                 </li>
               </ul>
@@ -338,8 +483,107 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
-    <script src="/assets/js/script.js"></script>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JavaScript -->
+    <script>
+      // Sample data for publications
+      const publicationsData = {
+        journals: [
+          {
+            title: 'Advances in Quantum Computing',
+            authors: 'J. Doe, A. Smith',
+            year: 2024,
+            journal: 'Journal of Modern Physics',
+          },
+          {
+            title: 'Machine Learning in Climate Modeling',
+            authors: 'K. Lee, M. Brown',
+            year: 2023,
+            journal: 'AI Research',
+          },
+        ],
+        technical: [
+          {
+            title: 'Scalable Data Processing Framework',
+            authors: 'P. Johnson',
+            year: 2024,
+            reportId: 'TR-2024-01',
+          },
+          {
+            title: 'Energy Efficiency in IoT Devices',
+            authors: 'L. Carter',
+            year: 2023,
+            reportId: 'TR-2023-05',
+          },
+        ],
+        annual: [
+          {
+            title: 'Annual Research Report 2024',
+            year: 2024,
+            summary: 'Comprehensive overview of research activities.',
+          },
+          {
+            title: 'Annual Research Report 2023',
+            year: 2023,
+            summary: 'Key achievements and milestones.',
+          },
+        ],
+      };
+
+      // Function to render publications with a section label
+      function renderPublications(tabId, data) {
+        const contentDiv = document.getElementById(`${tabId}-content`);
+        contentDiv.innerHTML = ''; // Clear existing content
+
+        // Add section label
+        const label = document.createElement('div');
+        label.className = 'section-label';
+        label.textContent = tabId.charAt(0).toUpperCase() + tabId.slice(1); // Capitalize tab name (e.g., "Journals")
+        contentDiv.appendChild(label);
+
+        // Render publication items
+        data.forEach((item) => {
+          const div = document.createElement('div');
+          div.className = 'publication-item';
+          if (tabId === 'journals') {
+            div.innerHTML = `
+                      <h5>${item.title}</h5>
+                      <p>${item.authors} (${item.year}) - ${item.journal}</p>
+                  `;
+          } else if (tabId === 'technical') {
+            div.innerHTML = `
+                      <h5>${item.title}</h5>
+                      <p>${item.authors} (${item.year}) - Report ID: ${item.reportId}</p>
+                  `;
+          } else if (tabId === 'annual') {
+            div.innerHTML = `
+                      <h5>${item.title}</h5>
+                      <p>${item.year} - ${item.summary}</p>
+                  `;
+          }
+          contentDiv.appendChild(div);
+        });
+      }
+
+      // Initial render for active tab
+      renderPublications('journals', publicationsData.journals);
+
+      // Event listener for tab changes
+      document
+        .getElementById('publicationsTab')
+        .addEventListener('shown.bs.tab', function (e) {
+          const targetTab = e.target
+            .getAttribute('data-bs-target')
+            .substring(1);
+          renderPublications(targetTab, publicationsData[targetTab]);
+        });
+    </script>
   </body>
 </html>
